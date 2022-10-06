@@ -2,7 +2,23 @@
 
 This is a sample npm package hosted at GitHub Packages.
 
-## Setup
+## Install
+
+Create `.npmrc`:
+
+```
+@himajin-dev:registry=https://npm.pkg.github.com
+```
+
+Install npm package:
+
+```
+npm install @himajin-dev/sample-npm-package
+```
+
+## Development
+
+### Setup
 
 Install dependencies:
 
@@ -10,7 +26,7 @@ Install dependencies:
 yarn install
 ```
 
-## Usage
+### Usage
 
 Transpile to JavaScript:
 
@@ -18,7 +34,7 @@ Transpile to JavaScript:
 yarn build
 ```
 
-## Publish
+### Publish
 
 Publish to GitHub Packages:
 
