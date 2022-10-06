@@ -1,14 +1,21 @@
 {
   "name": "@himajin-dev/sample-npm-package",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": ["dist"],
   "scripts": {
-    "build": "tsc",
+    "clean": "rm -rf dist",
+    "build": "yarn clean && tsc",
+    "prepare": "yarn build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "devDependencies": {
     "typescript": "^4.8.4"
   }
